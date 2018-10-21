@@ -2,8 +2,6 @@ class KeysRoute extends PageRoute {
 
   constructor(router) {
     super("^[\/]keys$", "Keys", "#page_keys", "#button_keys", router);
-    this.keysLoaded = false;
-    this.jobsLoaded = false;
 
     this._updateKeys = this._updateKeys.bind(this);
     this._updateKeysFingerprint = this._updateKeysFingerprint.bind(this);

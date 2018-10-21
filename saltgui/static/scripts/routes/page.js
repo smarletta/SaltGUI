@@ -240,8 +240,6 @@ class PageRoute extends Route {
       }
       shown = shown + 1;
     }
-    this.jobsLoaded = true;
-    if(this.keysLoaded && this.jobsLoaded) this.resolvePromise();
   }
 
   _runningJobs(data, jobsStatus = false) {
